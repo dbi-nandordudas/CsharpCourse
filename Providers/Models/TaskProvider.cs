@@ -7,18 +7,18 @@ namespace CsharpCourse.Providers.Models
 {
     public class TaskProvider
     {
-        private List<Task> Tasks = new List<Task>();
+        private List<string> Tasks = new List<string>();
 
-        public void AddTask(Task task)
+        public void AddTask(string task)
         {
             Tasks.Add(task);
         }
 
         public void ResolveTasks()
         {
-            foreach (Task task in Tasks)
+            foreach (string task in Tasks)
             {
-                CreateAndInvoke($"{task.GetType().Namespace}.{task.GetType().Name}", "Resolve");
+                CreateAndInvoke(task, "Resolve");
             }
         }
 

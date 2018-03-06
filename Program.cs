@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 using CsharpCourse.Models;
 using CsharpCourse.Providers.Models;
 
@@ -12,7 +13,7 @@ namespace CsharpCourse
             {
                 TaskProvider taskProvider = new TaskProvider();
 
-                taskProvider.AddTask(new Task());
+                taskProvider.AddTask("CsharpCourse.Models.Task");
 
                 taskProvider.ResolveTasks();
             }
