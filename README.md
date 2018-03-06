@@ -23,9 +23,9 @@ The [.NET core] has been installed. And I made a new console application.
 > mkdir CsharpCourse && cd $_
 > git flow init -d
 > git remote add origin git@github.com:@user/@repo
+> dotnet new console --output . --name CsharpCourse
 > git add .
 > git commit -m "Initial files added"
-> dotnet new console --output . --name CsharpCourse
 ```
 
 ---
