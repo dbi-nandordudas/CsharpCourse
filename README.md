@@ -28,6 +28,21 @@ The [.NET core] has been installed. And I made a new console application.
 > dotnet new console --output . --name CsharpCourse
 ```
 
+---
+
+## You can run a specific task
+
+```sh
+> dotnet run --lesson 2 --task 5
+```
+
+### Avalilable tasks per lessons
+
+| Lessons | Tasks | From | To |
+|---|:---:|:---:|---|
+| Lesson 01 | <span style="color:green">&#10003;</span> | 1 | 1 |
+| Lesson 02 | <span style="color:green">&#10003;</span> | 1 | 9 |
+
 [visual studio code]: https://code.visualstudio.com 'Visual Studio Code'
 [instructions]: https://code.visualstudio.com/docs/languages/csharp 'instructions'
 [c#]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp 'C#'
@@ -38,5 +53,5 @@ The [.NET core] has been installed. And I made a new console application.
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: ./LICENSE 'MIT license'
 
-[version-badge]: https://img.shields.io/badge/version-0.0.1-blue.svg
+[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
 [changelog]: ./CHANGELOG.md 'Changelog'
