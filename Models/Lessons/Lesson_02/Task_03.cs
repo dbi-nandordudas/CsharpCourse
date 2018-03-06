@@ -39,7 +39,6 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
             {
                 Console.WriteLine(e.Message);
             }
-
         }
 
         public static bool IsDivider(int num_01, int num_02) => num_01 % num_02 == 0;
