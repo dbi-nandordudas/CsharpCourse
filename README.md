@@ -1,4 +1,4 @@
-[![license][license-badge]][license]
+[![version][version-badge]][changelog] [![license][license-badge]][license]
 
 # C&#35; course
 
@@ -37,3 +37,6 @@ The [.NET core] has been installed. And I made a new console application.
 [gitflow]: https://jeffkreeftmeijer.com/git-flow 'GitFlow'
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: ./LICENSE 'MIT license'
+
+[version-badge]: https://img.shields.io/badge/version-0.0.1-blue.svg
+[changelog]: ./CHANGELOG.md 'Changelog'
