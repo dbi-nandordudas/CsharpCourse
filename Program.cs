@@ -1,4 +1,5 @@
 ﻿using System;
+using CsharpCourse.Models;
 
 namespace CsharpCourse
 {
@@ -6,7 +7,8 @@ namespace CsharpCourse
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Task task = new Task();
+            task.Resolve();
         }
     }
 }
