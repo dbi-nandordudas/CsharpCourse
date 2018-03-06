@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.0] - 2018-03-06
+
+### Changed
+
+*   CHANGELOG file
+*   README file
+
+### Added
+
+*   A task provider for calling task models dynamically
+*   Basic argument support for calling specific tasks
+
+### Feature
+
+You can run specific tasks. An example like below.
+
+| Lessons | Tasks | From | To |
+|---|:---:|:---:|---|
+| Lesson 01 | <span style="color:green">&#10003;</span> | 1 | 1 |
+| Lesson 02 | <span style="color:green">&#10003;</span> | 1 | 9 |
+
+```sh
+# The arguments are not required, but in that case only run the first lesson's first task
+> dotnet run --lesson 2 --task 3
+```
+
 ## [v0.0.1] - 2018-03-06
 
 ### Changed
@@ -12,4 +38,5 @@ All notable changes to this project will be documented in this file.
 
 *   This CHANGELOG file
 
+[v1.0.0]: https://github.com/nandordudas/CsharpCourse/compare/v0.0.1...v1.0.0 'Release: v1.0.0'
 [v0.0.1]: https://github.com/nandordudas/CsharpCourse/releases/tag/v0.0.1 'Release: v0.0.1'
