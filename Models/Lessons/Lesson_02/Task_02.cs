@@ -5,14 +5,6 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
 {
     public class Task_02 : BaseTask
     {
-        public enum Operation : int
-        {
-            ADD,
-            SUBSTRACT,
-            MULTIPLY,
-            DIVIDE
-        }
-
         public Task_02()
         {
             Description = "Készítsünk programot, mely bekér a felhasználótól egy számot, majd kiírja az adott számról, hogy páros, páratlan, vagy nulla.";
