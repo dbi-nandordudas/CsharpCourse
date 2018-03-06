@@ -1,11 +1,11 @@
 using System;
 using CsharpCourse.Models.Abstract;
 
-namespace CsharpCourse.Models
+namespace CsharpCourse.Models.Lessons.Lesson_01
 {
-    public class Task : BaseTask
+    public class Task_01 : BaseTask
     {
-        public Task()
+        public Task_01()
         {
             Description = "My first task's long description. My first task's long description. My first task's long description.";
 

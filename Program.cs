@@ -13,7 +13,7 @@ namespace CsharpCourse
             {
                 TaskProvider taskProvider = new TaskProvider();
 
-                taskProvider.AddTask("CsharpCourse.Models.Task");
+                taskProvider.AddTask("CsharpCourse.Models.Lessons.Lesson_01.Task_01");
 
                 taskProvider.ResolveTasks();
             }
