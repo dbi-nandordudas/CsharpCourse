@@ -8,23 +8,23 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
     {
         public Task_06()
         {
-            Description = "Készítsünk programot, mely a következő feladatot látja el: Bekér a felhasználótól egy számot, majd a megadott számig kiírja a prímszámokat.";
+            Description = "Készítsünk programot, mely a következő feladatot látja el: Bekér a felhasználótól egy számot, majd eldönti róla, hogy az adott szám prímszám-e. A program írja ki, hogy a felhasználó által megadott szám osztóit, illetve, hogy az adott számnak hány osztója van az egyen és önmagán kívül.";
 
             ShowInfo();
         }
 
         public override void Resolve()
         {
-            int to;
+            int num;
 
             Console.WriteLine("Adjon meg egy egész számot!");
 
             try
             {
                 Console.Write("Az adott szám: ");
-                to = Convert.ToInt32(Console.ReadLine());
+                num = Convert.ToInt32(Console.ReadLine());
 
-                GenerateNumbers(to, IsPrime);
+                GetAllFactors(num);
             }
             catch (Exception e)
             {
@@ -32,32 +32,28 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
             }
         }
 
-        public static void GenerateNumbers(int to, Func<int, bool> condition, int from = 1, int increase = 1)
-        {
-            List<int> numbers = new List<int>();
+        public static bool isDivider(int num_01, int num_02) => num_01 % num_02 == 0;
 
-            for (int i = from; i <= to; i += increase)
+        public static void GetAllFactors(int number)
+        {
+            int count = 0;
+            List<int> factors = new List<int>();
+
+            for (int i = number - 1; i > 1; i--)
             {
-                if (condition(i))
+                if (isDivider(number, i))
                 {
-                    numbers.Add(i);
+                    factors.Add(i);
+                    count++;
                 }
             }
 
-            Console.WriteLine(String.Join(", ", numbers.ToArray()));
-        }
-
-        public static bool IsPrime(int number)
-        {
-            for (int i = 2; i <= Math.Ceiling(Math.Sqrt(number)); ++i)
+            if (factors.Count > 0)
             {
-                if (number % i == 0)
-                {
-                    return false;
-                }
+                Console.WriteLine($"A(z) {number} osztói: {String.Join(", ", factors.ToArray())}");
             }
 
-            return true;
+            Console.WriteLine($"A(z) {number}-n(ae)k {count} darab osztója van, önmagan és az 1-en kívül");
         }
     }
 }
