@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Reflection;
 using CsharpCourse.Models;
+using CsharpCourse.Providers.Models;
 
 namespace CsharpCourse
 {
@@ -10,36 +10,16 @@ namespace CsharpCourse
         {
             try
             {
-                string MethodName = "Resolve";
-                string TypeName = "CsharpCourse.Models.Task";
+                TaskProvider taskProvider = new TaskProvider();
 
-                CreateAndInvoke(TypeName, MethodName);
+                taskProvider.AddTask(new Task());
+
+                taskProvider.ResolveTasks();
             }
             catch (Exception e)
             {
-
                 Console.WriteLine(e.Message);
             }
-        }
-
-        public static object CreateAndInvoke(string typeName, string methodName, object[] methodArgs = null)
-        {
-            Type type = Type.GetType(typeName);
-
-            if (type == null)
-            {
-                throw new InvalidOperationException($"{typeName} model doesn't exists");
-            }
-
-            object instance = Activator.CreateInstance(type);
-            MethodInfo method = type.GetMethod(methodName);
-
-            if (method == null)
-            {
-                throw new InvalidOperationException($"{methodName} method doesn't exists");
-            }
-
-            return method.Invoke(instance, methodArgs);
         }
     }
 }
