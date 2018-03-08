@@ -36,6 +36,7 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
 
         public static void GetAllFactorsByPrime(int number)
         {
+            int original = number;
             List<int> numbers = new List<int>();
 
             for (int i = 2; i <= number; i++)
@@ -47,7 +48,7 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
                 }
             }
 
-            Console.WriteLine($"A(z) {number} prímtényezős felbontása: {String.Join(", ", numbers.ToArray())}");
+            Console.WriteLine($"A(z) {original} prímtényezős felbontása: {String.Join(", ", numbers.ToArray())}");
         }
     }
 }
