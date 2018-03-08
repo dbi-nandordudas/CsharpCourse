@@ -53,5 +53,5 @@ The [.NET core] has been installed. And I made a new console application.
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: ./LICENSE 'MIT license'
 
-[version-badge]: https://img.shields.io/badge/version-1.0.2-blue.svg
+[version-badge]: https://img.shields.io/badge/version-1.0.3-blue.svg
 [changelog]: ./CHANGELOG.md 'Changelog'
