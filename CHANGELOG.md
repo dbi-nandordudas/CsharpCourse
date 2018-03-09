@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 
 *   CHANGELOG
 *   README file
+*   Lesson 2 / Task 1: logic changed to only adding and multiplying
 
 ### Removed
 *   IResolvable interface
