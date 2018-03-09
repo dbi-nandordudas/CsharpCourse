@@ -1,11 +1,10 @@
 using System;
 using System.Linq;
 using System.Text.RegularExpressions;
-using CsharpCourse.Interfaces.Models;
 
 namespace CsharpCourse.Models.Abstract
 {
-    abstract public class BaseTask : IResolvable
+    abstract public class BaseTask
     {
         private string _description;
 
