@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.4] - 2018-03-09
+
+### Changed
+
+*   CHANGELOG
+*   README file
+
+### Removed
+*   IResolvable interface
+
 ## [v1.0.3] - 2018-03-07
 
 ### Changed
@@ -59,6 +69,7 @@ You can run specific tasks. An example like below.
 
 *   This CHANGELOG file
 
+[v1.0.4]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.4...v1.0.4 'Release: v1.0.4'
 [v1.0.3]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.2...v1.0.3 'Release: v1.0.3'
 [v1.0.2]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.1...v1.0.2 'Release: v1.0.2'
 [v1.0.1]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.0...v1.0.1 'Release: v1.0.1'
