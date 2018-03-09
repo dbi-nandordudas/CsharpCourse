@@ -62,7 +62,7 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
                 case Operation.ADD:
                     return num_01 + num_02;
                 case Operation.SUBSTRACT:
-                    return num_01 - num_02;
+                    return num_01 + num_02 * -1;
                 default:
                     throw new InvalidOperationException("Helytelen műveletet akarsz vegrehajtani: (+, -)!");
             }
@@ -75,7 +75,7 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
                 case Operation.MULTIPLY:
                     return num_01 * num_02;
                 case Operation.DIVIDE:
-                    return num_01 / (float) num_02;
+                    return num_01 * (float) Math.Pow(num_02, -1);
                 default:
                     throw new InvalidOperationException("Helytelen műveletet akarsz vegrehajtani: (*, /)!");
             }
