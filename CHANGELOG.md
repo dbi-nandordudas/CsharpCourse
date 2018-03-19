@@ -2,12 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v1.0.5] - 2018-03-19
+
+### Changed
+
+*   CHANGELOG
+*   README
+*   Lesson 2 / Task 2: Change number even checker
+
 ## [v1.0.4] - 2018-03-09
 
 ### Changed
 
 *   CHANGELOG
-*   README file
+*   README
 *   Lesson 2 / Task 1: logic changed to only adding and multiplying
 
 ### Removed
@@ -18,7 +26,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 *   CHANGELOG
-*   README file
+*   README
 *   Lesson 2 / Task 8: wrong console output
 
 ## [v1.0.2] - 2018-03-07
@@ -26,20 +34,20 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 *   CHANGELOG
-*   README file
+*   README
 
 ## [v1.0.1] - 2018-03-07
 
 ### Changed
 
-*   README file
+*   README
 
 ## [v1.0.0] - 2018-03-06
 
 ### Changed
 
-*   CHANGELOG file
-*   README file
+*   CHANGELOG
+*   README
 
 ### Added
 
@@ -64,13 +72,14 @@ You can run specific tasks. An example like below.
 
 ### Changed
 
-*   README file
+*   README
 
 ### Added
 
-*   This CHANGELOG file
+*   This CHANGELOG
 
-[v1.0.4]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.4...v1.0.4 'Release: v1.0.4'
+[v1.0.5]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.4...v1.0.5 'Release: v1.0.5'
+[v1.0.4]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.3...v1.0.4 'Release: v1.0.4'
 [v1.0.3]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.2...v1.0.3 'Release: v1.0.3'
 [v1.0.2]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.1...v1.0.2 'Release: v1.0.2'
 [v1.0.1]: https://github.com/nandordudas/CsharpCourse/compare/v1.0.0...v1.0.1 'Release: v1.0.1'
