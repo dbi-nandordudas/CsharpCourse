@@ -37,6 +37,7 @@ namespace CsharpCourse.Models.Lessons.Lesson_02
 
         public static bool IsZero(int number) => number == 0;
 
-        public static bool IsEven(int number) => number % 2 == 0;
+        // Math.DivRem((long)number, (long)2, output out) | number % 2
+        public static bool IsEven(int number) => (number & 1) == 0;
     }
 }
